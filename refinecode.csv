@@ -1,0 +1,512 @@
+library("dplyr", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("ggplot2", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("plyr", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("purrr", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("readxl", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("RecordLinkage", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("rmarkdown", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("stringi", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("tibble", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("tidyr", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("tidyverse", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+refine_original
+str(refine_original)
+summary(refine_original)
+?remove()
+rm(refine_original$X1
+file.copy("refine_original","refine_revise")
+load(refine_revise)
+getwd(refine_original)
+View(refine)
+load(refine)
+load("refine")
+str(refine)
+group_by(refine$brand)
+file.path("refine")
+$lower
+?low
+refine_original %>% group_by(brand)
+brandrev <- mutate(refine_original,"brand")
+str(brandrev)
+remove(brandrev)
+remove(refine)
+mutate(brandshort = tolower(brand))
+load refine_original
+refine_original
+brandlow <- tolower(brand)
+print(brand)
+print("brand")
+"brand"
+mutate(refine_original, brandlow = tolower(brand))
+refinetwo <- refine_original
+refinetwo
+refinetwo <- mutate(refine_original, brandlow = tolower(brand))
+refinetw0
+refinetwo
+view(refinetwo)
+View(refinetwo)
+refinetwo <- separate(refinetwo$product, "productcode","productname")
+refinetwo<- separate(refinetwo, product, "productcode", "productnumber")
+refinetwo
+refinetwo <- refinetwo %>% separate(productcode, C("productcode", "productnumber"))
+refinetwo <- refinetwo %>% separate(productcode, c("productcode", "productnumber"))
+refinetwo <- refinetwo %>% replace(refinetwo,brandlow,"phillips" = "philips", "phillps" = "philips","phllips" = "philips")
+refinetwo <- refinetwo %>% replace(brandlow,"phillips" = "philips", "phillps" = "philips","phllips" = "philips")
+refinetwo %>% replace(brandlow,"phillips" = "philips", "phillps" = "philips","phllips" = "philips")
+replace(brandlow,"phillips" = "philips", "phillps" = "philips","phllips" = "philips")
+group_by(refinetwo,brandlow)
+View(refinetwo)
+refinetwo %>% refinetwo[2,9] = "philips"
+refinetwo[2,9] = "philips"
+View(refinetwo)
+refinetwo[3,9] = "philips"
+refinetwo
+group_by(refinetwo,brandlow)
+View(refinetwo)
+rm(refinetwo)
+refinetwo <- mutate(refine_original, brandlow = tolower(brand))
+refinetwo
+refinetwo<- separate(refinetwo, product, "productcode", "productnumber")
+refinetwo
+View(refinetwo)
+refinetwo %>% separate(refinetwo, product,"productcode","productnumber")
+refinetwo %>% separate(refinetwo, productcode,"productcode","productnumber")
+separate(refinetwo, product,"productcode","productnumber")
+refinetwo %>% separate(refinetwo,productcode, c("productcode","productnumber"))
+refinetwo %>% separate(productcode, c("productcode","productnumber"))
+refinethree <- refinetwo
+View(refinethree)
+View(refinetwo)
+refinethree <- refinetwo %>% separate(productcode, c("productcode","productnumber"))
+refinethree
+View(refinethree)
+save.image(refinethree)
+group_by(refinethree$brandlow)
+refinethree %>% refinethree[1,9]=NA
+refinethree[1,9]=NA
+View(refinethree)
+library("data.table", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("dplyr", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("ggplot2", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("knitr", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("markdown", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("purrr", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("readr", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("stringi", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("stringr", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("tibble", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("tidyr", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("tidyverse", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+install.packages("psych")
+refinethree
+library("dplyr", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("fastmatch", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+detach("package:fastmatch", unload=TRUE)
+library("ggplot2", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("knitr", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("markdown", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("purrr", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("readr", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("readxl", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("rmarkdown", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("stringi", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("stringr", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("tibble", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+library("tidyverse", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+refinethree
+refinethree <- str_replace(refinethree[12,9],"akzo")
+str_replace(refinethree[12,9],"akzo")
+str_replace(refinethree[12,9] ="akzo")
+str_replace(refinethree[12,9],"akzo")
+data.frame[12,9] = "akzo"
+data.frame(refinethree[12,9],"akzo")
+View(refinethree)
+refinethree
+refinethree <- data.frame(refinethree[12,9],"akzo")
+refinethree
+View(refinethree)
+View(refinethree)
+View(refinethree)
+rm(refinethree)
+refinetwo
+View(refinetwo)
+refinethree <- separate(refinetwo$productcode, c("productcode","productnumber"))
+refinethree <- separate(refinetwo$productcode, c("prodcode","productnumber"))
+refinethree <- separate(refinetwo[3], c("productcode","productnumber"))
+refinethree <- separate(productcode, c("productcode","productnumber"))
+refinethree <- separate(refinetwo,productcode, c("prodcode","prodnumber"))
+View(refinethree)
+refinefour <- str_replace_all(refinethree$brandlow,space(),"")
+refinefour <- str_replace_all(refinethree$brandlow,fixed(" "),"")
+View(refinefour)
+refinefour <- refinethree %>% str_replace_all(refinethree$brandlow,fixed(" "),"")
+refinefour <- refinethree %.% str_replace_all(refinethree$brandlow," ","")
+refinefour <- refinethree %>% str_replace_all(refinethree$brandlow," ","")
+refinefour <- refinethree %>% gsub(refinethree$brandlow," ","")
+rm(refinefour)
+View(refinethree)
+save.image(file = "refinethree.RData")
+View(refinethree)
+refinethree %>% str_replace_all(refinethree$brandlow, fixed(" "),"")
+refinethree %>% chartr(" ","",refinethree$brandlow)
+refinethree %>% str_replace_all(refinethree$brandlow," ","")
+?str_replace_all
+refinethree <- refinethree %>% str_replace_all(refinethree$brandlow," ","")
+str_replace_all(refinethree$brandlow," ","")
+save.image(file = "refinefour.RData")
+refinefour
+refinethree
+View(refinethree)
+remove(refinethree$X1)
+rows_to_keep <- c(1:26)
+View(refinethree)
+rm(rows_to_keep)
+refinefour <- refinethree(!27,)
+refinethree
+class(refinethree)
+datalow
+refinethree
+refinethree$brandlow
+str_replace_all(brandlow, fixed(" "), "")
+str_replace_all(refinethree$brandlow, fixed(" "), "")
+refinefour <- refintethree %>% str_replace_all(refinethree$brandlow, fixed(" "), "")
+refinefour <- refinethree %>% str_replace_all(refinethree$brandlow, fixed(" "), "")
+brandnospace <- str_replace_all(refinethree$brandlow, fixed(" "), "")
+brandnospace
+replace(brandnospace,brandcorrect,"phillips" ="philips","phllips" = "philips","phillps"="philips","akz0"="akzo","fillips"="philips","phlips"="philips","unilver"="unilever")
+replace(brandnospace,"brandcorrect","phillips" ="philips","phllips" = "philips","phillps"="philips","akz0"="akzo","fillips"="philips","phlips"="philips","unilver"="unilever")
+replace(refinethree$brandnospace,"refinethree$brandcorrect,"phillips" ="philips","phllips" = "philips","phillps"="philips","akz0"="akzo","fillips"="philips","phlips"="philips","unilver"="unilever")
+refintethree %>% replace(brandnospace,brandcorrect,"phillips" ="philips","phllips" = "philips","phillps"="philips","akz0"="akzo","fillips"="philips","phlips"="philips","unilver"="unilever")
+refinethree %>% replace(brandnospace,brandcorrect,"phillips" ="philips","phllips" = "philips","phillps"="philips","akz0"="akzo","fillips"="philips","phlips"="philips","unilver"="unilever")
+refinethree %>% str_replace_all(brandnospace,"phillips" ="philips","phllips" = "philips","phillps"="philips","akz0"="akzo","fillips"="philips","phlips"="philips","unilver"="unilever")
+replace(brandnospace,brandcorrect,"phillips" ="philips","phllips" = "philips","phillps"="philips","akz0"="akzo","fillips"="philips","phlips"="philips","unilver"="unilever")
+replace(brandnospace,brandcorrect,phillips ="philips",phllips = "philips",phillps="philips",akz0="akzo",fillips="philips",phlips="philips",unilver="unilever")
+brandlow
+refinethree$brandlow
+str_replace(brandlow,"phillips", "philips")
+str_replace(refine$brandlow,"phillips", "philips")
+str_replace(refinethree$brandlow,"phillips", "philips")
+str_replace(refinethree$brandlow,"fillips", "philips")
+brand1 <- str_replace(refinethree$brandlow,"phillips", "philips")
+brand1
+brand2 <- str_replace(refinethree$brand1,"phillips","philips")
+brand1
+save(brand1)
+brand2 <- str_replace(brand1,"phillps","philips")
+brand2
+brand3 <- str_replace(brand2,"phllips","philips")
+brand3
+brand4 <- str_replace(brand3,"fillips","philips")
+brand4
+brand5 <- str_replace(brand4,"phlips","philips")
+brand5
+brand6 <- str_replace(brand5,"akz0","akzo")
+brand6
+brand7 <- str_replace(brand6,""ak zo","akzo")
+brand7 <- str_replace(brand6,ak zo","akzo")
+brand7 <- str_replace(brand6,"ak zo","akzo")
+brand7
+brand8 <- str_replace(brand7,"unilver","unilever")
+brand8
+refinefour <- refinethree + brand8
+refinefour <- cbind(refinethree,brand8)
+refinefour
+View(refinefour)
+save.image("refinefour.RData")
+refinefour
+refinefour <- refinefour[-1,-1]
+refinefour
+View(refinefour)
+save(refinefour.RData)
+save("refinefour.RData")
+save.image("refinefour.RData")
+refinefour <- refinefour[-27,-8]
+refinefour
+View(refinefour)
+save.image("refinefour.RData")
+refinefour <- refinefour[-27,]
+refinefour
+View(refinefour)
+brandsort <- brand8
+View(refinefour)
+colnames(refinefour$brand8) <- "brandsort"
+colnames(refinefour) [8] <- "brandsort"
+refinefour
+save.image(refinefour.RData)
+save.image("refinefour.RData")
+refinefour
+View(refinefour)
+prodcode
+refinefour$prodcode
+prodcategory <- refinefour$prodcode
+refinefour
+prodcategory
+prodcategory <- str_replace(prodcategory,"p","Smartphone")
+prodcategory
+prodcategory2 <- str_replace(prodcategory,""v","TV")
+prodcategory2 <- str_replace(prodcategory,v","TV")
+prodcategory2 <- str_replace(prodcategory,"v","TV")
+prodcategory2
+prodcategory3 <_ str_replace(prodcategory2,"x","Laptop")
+prodcategory3 <- str_replace(prodcategory2,"x","Laptop")
+prodcategory3
+prodcategory4 <- str_replace(prodcategory3,"q","Tablet")
+prodcategory4
+prodcategory <- prodcategory4
+prodcategory
+refinefive <- cbind(refinefour,prodcategory)
+refinefive
+save.image("refinefive.RData")
+View(refinefive)
+fulladdress <- c("address"," , ","city"," , ","country")
+fulladdress
+fulladdress <- c(address," , ",city," , ",country)
+fulladdress <- transform(refinefive, fulladdress = paste(address,city,country),sep = ",")
+fulladdress
+View(refinefive)
+fulladdress
+refinefive$fulladdress <- paste(refinefive$address,",",refinefive$city,",",refinefive$country)
+save.image(refinefive.RData)
+save.image("refinefive.RData")
+View(refinefive)
+refine$brandsort
+refinefive$brandsort
+copy(brandsort)
+company_philips <- refinefive$brandsort
+company_philips
+company_philips <- factor ( with (data, ifelse ( ( company_philips == philips), 1, 0)))
+company_philips <- dummy.code(refinefive$brandsort)
+install.packages("dummies")
+library("dummies", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+dummy.code(company_philips)
+dummies::dummy(refinefive$company_philips)
+dummies::dummy(refinefive$company_philips(philips,1)
+refinefive$company_philips
+View(refinefive)
+refinefive$brandsort
+dummy(as.character(company_philips))
+rm(company_philips)
+library(dummies)
+1 <- c(NA,1,NA)
+brandsort
+brandsort2 <- brandsort
+brandsort2
+ifelse(brandsort2 = "philips", 1, 0)
+ifelse(refinefive$brandsort2 = "philips", 1, 0)
+brandsort2
+ifelse(brandsort2 == "philips", 1, 0)
+company_philips <- ifelse(brandsort2 == "philips", 1, 0)
+company_akzo <- ifelse(brandsort2 == "akzo", 1, 0)
+company_vanhouten <- ifelse(brandsort2 == "vanhouten", 1, 0)
+company_unilever <- ifelse(brandsort2 == "unilever", 1, 0)
+refinesix <- cbind(refinesix,company_philips)
+cbind(refinefive,company_philips)
+View(refinethree)
+View(fulladdress)
+View(refine_original)
+remove(fulladdress)
+remove(refine_original)
+remove(refinefive)
+remove(refinefour)
+remove(refinethree)
+remove(revinetwo)
+remove(refinetwo)
+remove(brand1)
+rm(brand2)
+rm(brand3)
+rm(brand4)
+rm(brand5)
+rm(brand6)
+rem(brand*)
+rm(brand*)
+rm(brand7)
+rm(brand8)
+rm(brandnospace)
+rm(brandsort)
+rm(brandsort2)
+rm(company_akzo)
+rm(company_philips)
+rm(company_unilever)
+rm(company_vanhouten)
+rm(prodcategory)
+rm(prodcategory2)
+rm(prodcategory3)
+rm(prodcategory4)
+rm(data.frame)
+library(readxl)
+refine_original <- read_excel("~/refine_original.xlsx",
+col_names = FALSE)
+View(refine_original)
+arrange(refine_original, X-1)
+arrange(refine_original, "X_1")
+library("RecordLinkage", lib.loc="/Library/Frameworks/R.framework/Versions/3.4/Resources/library")
+arrange(refine_original$X__1)
+arrange(refine_original$"X__1")
+sort
+X11()
+sort(refine_original,[1])
+?sort
+class(refine_original)
+sort(refine_original$X__1)
+save.image("refine1.RData")
+View(refine1)
+refine1
+refine_original
+refine_original <- sort(refine_original$X__1)
+refine_original
+View(refine_original)
+rm(refine_original)
+library(readxl)
+refine_original <- read_excel("~/refine_original.xlsx")
+View(refine_original)
+library(readxl)
+refine_original1 <- read_excel("~/refine_original.xlsx")
+View(refine_original1)
+rm(refine_original1)
+save.image(refine_original.RData)
+save.image("refine_original.RData")
+colnames(Table1,Company)
+Company <- Table 1
+Company <- "Table 1"
+refine_original
+`colnames<-`(refine_original,Company)
+refine_original
+Table 1
+'Table 1'
+colnames (refine_original) <- 'Table 1'
+refine_original
+Company <- 'Table 1'
+Company
+refine_original
+Company <- refine_original[1]
+refine_original
+refine_original
+colnames(refine_original)[1] <- "Company"
+refine_original
+colnames(refine_original)[2] <- "Product Code"
+colnames(refine_original)[2] <- "Address"
+colnames(refine_original)[2] <- "Product Code"
+refine_original
+colnames(refine_original)[3] <- "Address"
+refine_original
+colnames(refine_original)[4] <- "City"
+refine_original
+colnames(refine_original)[2] <- "Product_Code"
+refine_original
+colnames(refine_original)[5] <- "Country"
+colnames(refine_original)[6] <- "Name"
+refine_original
+save.image("refine_original.RData")
+View(refine_original)
+Company <- tolower(refine_original$Company)
+Company
+c1 <- Company
+c1
+c2 <- str_replace(c1,"ph*","philips")
+c2
+c1
+rm(c2)
+c1
+c2 <- str_replace(c1,"phillips","philips")
+c2
+c3 <- str_replace(c2,"phllips","philips")
+c3
+c4 <- str_replace(c3,"phillps","philips")
+c4
+c5 <- str_replace(c4,"akz0","akzo")
+c5
+c6 <- str_replace(c5,"ak zo","akzo")
+c6
+c7 <- str_replace(c6,"fillips","philips")
+c7
+c8 <- str_replace(c7,"phlips","philips")
+c8
+c9 <- str_replace(c8,"unilver","unilever")
+c9
+Company_sort <- c9
+refine2 <- cbind(refine_original,Company_sort)
+save.image("refine2.RData")
+refine2
+View(refine2)
+?mutate
+refine3 <- separate(refine2$Product_Code,c("ProductCode","ProductNumber"))
+refine3 <- separate(refine2 [2],c("ProductCode","ProductNumber"))
+refine3 <- separate(refine2,Product_Code,c("ProductCode","ProductNumber"))
+refine3
+save.image("refine3.RData")
+refine3
+View(refine3)
+rm(c1)
+rm(c2)
+rm(c3)
+rm(c4)
+rm(c5)
+rm(c6)
+rm(c7)
+rm(c8)
+rm(c9)
+rm(Company_sort)
+rm(Company)
+ProductCode <- str_replace(ProductCode,"p","Smartphone")
+ProductCode <- str_replace(refine3$ProductCode,"p","Smartphone")
+ProductCode
+View(refine3)
+ProductCode <- str_replace(refine3$ProductCode,"v","TV")
+ProductCode
+P2 <- str_replace(refine3$ProductCode,"p","Smartphone")
+P2
+P3<- str_replace(refine3$ProductCode,"v","TV")
+p3
+P3
+P4<- str_replace(p3,"p","Smartphone")
+P4<- str_replace(P3,"p","Smartphone")
+p4
+P4
+P5 <- str_replace(P4,"x","Laptop")
+P5
+P6 <- str_replace(P5,"q","Table")
+Category <-P6
+refine4 <- cbind(refine3,Category)
+save.image("refine4.RData")
+View(refine4)
+refine4$Full_Address <- paste(refine4$Address,",",refine4$City,",",refine4$Country)
+save.image(refine4)
+save.image("refine4.RData")
+refine4$Company_philips <- ifelse(refine4$Company_sort=="philips",1,0)
+save.image("refine4.RData")
+refine4$Company_akzo <- ifelse(refine4$Company_sort=="akzo",1,0)
+save.image("refine4.RData")
+refine4$Company_vanhouten <- ifelse(refine4$Company_sort=="van houten",1,0)
+save.image("refine4.RData")
+refine4$Company_unilever <- ifelse(refine4$Company_sort=="unilever",1,0)
+save.image("refine4.RData")
+refine4$Category_smartphone <- ifelse(refine4$Category=="Smartphone",1,0)
+save.image("refine4.RData")
+refine4$Category_tv <- ifelse(refine4$Category=="TV",1,0)
+save.image("refine4.RData")
+refine4$Category_Laptop <- ifelse(refine4$Category=="Laptop",1,0)
+save.image("refine4.RData")
+refine4$Category_tablet <- ifelse(refine4$Category=="Tablet",1,0)
+save.image("refine4.RData")
+refine4$Category_tablet <- ifelse(refine4$Category=="Table",1,0)
+save.image("refine4.RData")
+refine_clean <- refine4
+save.image("refine_clean.RData")
+savehistory(file = "refinecode.Rhistory")
+rm(refine2)
+rm(refine3)
+rm(refine4)
+rm(Category)
+rm(P2)
+rm(P3)
+rm(P4)
+rm(P5)
+rm(P6)
+rm(ProductCode)
+View(refine_clean)
+View(refine_clean)
+save.image("~/refine_exercise.RData")
+write_csv(refine_clean,"refine_clean.csv")
+write_csv(refine_original,"refine_original.csv")
+write_csv(refinecode,"refinecode.csv")
+savehistory(file ="refinecode.csv")
